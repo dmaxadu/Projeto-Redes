@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex artigo"] 1782493159.58625 "artigo.aux" "artigo.bbl" "artigo" 1782493819.29743 0
+["bibtex artigo"] 1782493159.58625 "artigo.aux" "artigo.bbl" "artigo" 1782494304.67611 0
   "./referencias.bib" 1782500458 2766 b6f4f90fea8cd4e07cbe97ffe06bfdc2 ""
   "./sbc.bst" 1782491533.63539 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "artigo.aux" 1782493819.06017 7881 4c10a6e50a20e263027fa2ba96ba0c4b "pdflatex"
+  "artigo.aux" 1782494304.41397 7881 4c10a6e50a20e263027fa2ba96ba0c4b "pdflatex"
   (generated)
   "artigo.bbl"
   "artigo.blg"
   (rewritten before read)
-["pdflatex"] 1782493818.44348 "/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex" "artigo.pdf" "artigo" 1782493819.29759 0
+["pdflatex"] 1782494303.77069 "/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex" "artigo.pdf" "artigo" 1782494304.67626 0
   "../bgp-myanmar/figuras/fig_correlacao.pdf" 1782492921.94505 57367 6b81fde3874288318a7e877b347b58a3 ""
   "../bgp-myanmar/figuras/fig_hijack.pdf" 1782492921.57343 21934 f134e0a5de6e1d99991edaf121032b34 ""
   "../bgp-myanmar/figuras/fig_withdrawals.pdf" 1782492921.16529 81843 b447d05b732c8b0423b254661818d303 ""
-  "/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex" 1782493818.19253 27014 ddd5e3c56d1567a549b5e0c2d2c2bb7c ""
+  "/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex" 1782494303.53751 27015 6ecc76e3559b98d96623113b9d813420 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm" 1136768653 960 4ab65358b8406f30ef5496c8c096d22b ""
@@ -112,10 +112,10 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1776515429 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1776515302 3636773 95d6f99d2c163a4291da44378fde3ab2 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "artigo.aux" 1782493819.06017 7881 4c10a6e50a20e263027fa2ba96ba0c4b "pdflatex"
+  "artigo.aux" 1782494304.41397 7881 4c10a6e50a20e263027fa2ba96ba0c4b "pdflatex"
   "artigo.bbl" 1782493159.69631 1570 eecc4915566e328fab9d8a2391b752f3 "bibtex artigo"
-  "artigo.out" 1782493819.06137 4162 c8b4cb0895162b2aea3b33531650ce28 "pdflatex"
-  "artigo.tex" 1782493818.19253 27014 ddd5e3c56d1567a549b5e0c2d2c2bb7c ""
+  "artigo.out" 1782494304.41495 4162 c8b4cb0895162b2aea3b33531650ce28 "pdflatex"
+  "artigo.tex" 1782494303.53751 27015 6ecc76e3559b98d96623113b9d813420 ""
   "sbc-template.sty" 1782493120.50342 2549 61c3bf34fd999a3c8c9256e3558dffbe ""
   (generated)
   "artigo.aux"
