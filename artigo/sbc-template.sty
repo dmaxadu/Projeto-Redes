@@ -1,0 +1,105 @@
+% sbc-template.sty — faithful recreation of the official SBC template package
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sbc-template}[2025/01/01 SBC Conference Template]
+
+\RequirePackage{times}
+\RequirePackage{helvet}
+\RequirePackage{courier}
+\RequirePackage{geometry}
+
+\geometry{
+  a4paper,
+  top=3.5cm,
+  bottom=2.5cm,
+  left=3.0cm,
+  right=3.0cm,
+  headheight=0pt,
+  headsep=0pt,
+  footskip=1cm
+}
+
+% No page numbers (also override \maketitle's internal \thispagestyle{plain})
+\pagestyle{empty}
+\let\sbc@orig@maketitle\maketitle
+\renewcommand{\maketitle}{\sbc@orig@maketitle\thispagestyle{empty}}
+
+% Paragraph: 6pt space before, no indent for first paragraph
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+% Subsequent paragraph indent
+\newlength{\sbcparindent}
+\setlength{\sbcparindent}{1.27cm}
+
+% ---- Title block ----
+\def\@maketitle{%
+  \begin{center}
+    {\fontsize{14}{17}\bfseries\@title\par}%
+    \vskip 12pt
+    {\fontsize{12}{15}\@author\par}%
+    \vskip 6pt
+    {\fontsize{10}{12}\@address\par}%
+  \end{center}%
+  \vskip 12pt
+}
+
+\newcommand{\address}[1]{\gdef\@address{#1}}
+\gdef\@address{}
+
+\newcommand{\nextinstitute}{\\ \hspace*{1em}}
+
+% inst command for author affiliations
+\newcommand{\inst}[1]{\textsuperscript{#1}}
+
+% ---- Sections: bold 13pt, flush left, 12pt extra before ----
+\renewcommand{\section}{%
+  \@startsection{section}{1}{\z@}%
+    {-12pt \@plus -2pt \@minus -2pt}%
+    {6pt \@plus 2pt}%
+    {\normalfont\fontsize{13}{15}\selectfont\bfseries}%
+}
+
+\renewcommand{\subsection}{%
+  \@startsection{subsection}{2}{\z@}%
+    {-6pt \@plus -2pt \@minus -2pt}%
+    {4pt \@plus 2pt}%
+    {\normalfont\fontsize{12}{14}\selectfont\bfseries}%
+}
+
+% ---- Abstract / Resumo ----
+\renewenvironment{abstract}{%
+  \begin{center}{\bfseries Abstract}\end{center}%
+  \begin{quotation}\noindent\small
+}{%
+  \end{quotation}\vskip 12pt
+}
+
+\newenvironment{resumo}{%
+  \begin{center}{\bfseries Resumo}\end{center}%
+  \begin{quotation}\noindent\small
+}{%
+  \end{quotation}\vskip 12pt
+}
+
+% ---- Captions: Helvetica 10pt bold ----
+\RequirePackage{caption}
+\captionsetup{
+  font={small,bf,sf},
+  labelfont={small,bf,sf},
+  skip=6pt,
+  justification=centering
+}
+
+% ---- References ----
+\renewenvironment{thebibliography}[1]{%
+  \section*{\refname}%
+  \list{[\arabic{enumiv}]}{\usecounter{enumiv}%
+    \setlength{\leftmargin}{0.5cm}%
+    \setlength{\itemindent}{-0.5cm}%
+    \setlength{\itemsep}{6pt}%
+    \setlength{\parsep}{0pt}%
+  }%
+  \normalsize
+}{\endlist}
+
+\endinput
