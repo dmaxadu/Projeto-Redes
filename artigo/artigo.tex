@@ -2,6 +2,7 @@
 
 \usepackage{sbc-template}
 \usepackage{graphicx,url}
+\graphicspath{{../bgp-myanmar/figuras/}}
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 \usepackage{booktabs}
@@ -12,11 +13,11 @@
 \title{Manipulação de Rotas BGP como Instrumento de Controle Político:\\
 O Caso de Myanmar (2021)}
 
-\author{[Nome do Autor 1]\inst{1}, [Nome do Autor 2]\inst{1}}
+\author{[Arlene Pelanda Juliene]\inst{1}, [Daniel Machado da Conceição]\inst{1}, [Leonardo de Melo Soares]\inst{1}, [Sylvio Heltt]\inst{1}, [Victor Pereira de Lima]\inst{1}}
 
-\address{Departamento de Ciência da Computação\\
+\address{Instituto de Ciência da Computação\\
   Universidade Federal do Rio de Janeiro (UFRJ) -- Rio de Janeiro -- RJ -- Brasil
-  \email{\{autor1, autor2\}@dcc.ufrj.br}
+  \email{\{arlenepj, danielmc, leonardom, sylviophh, victorpl\}@ic.ufrj.br}
 }
 
 \begin{document}
@@ -291,9 +292,9 @@ M6 & Cobertura RPKI                  & RIPEstat / RPKI & Fev 2021 \\
 
 \subsection{Cronologia e Padrão dos Apagões (M1, M2)}
 
-A Figura~\ref{fig:withdrawals} (a produzir via RIPEstat/BGPStream) deve
-mostrar o volume de withdrawals por hora para AS9988, AS136168, AS132748 e
-AS132167 ao longo de fevereiro de 2021. Esperamos observar:
+A Figura~\ref{fig:withdrawals} mostra o volume de withdrawals por hora para
+AS9988, AS136168, AS132748 e AS132167 ao longo do período analisado.
+Observamos:
 
 \begin{itemize}
   \item Pico de withdrawals simultâneos em múltiplos ASes às 21h UTC de
@@ -303,6 +304,16 @@ AS132167 ao longo de fevereiro de 2021. Esperamos observar:
     recuperações às 02h30 UTC (09h local) a partir de 14 de fevereiro
     (curfews)~\cite{ooni:multiperspective}.
 \end{itemize}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{fig_withdrawals.pdf}
+\caption{Volume de retiradas de prefixos BGP por hora para os quatro ISPs
+  monitorados de Myanmar (jan--abr 2021). Faixas cinza: janelas de curfew
+  (18h30--02h30 UTC, 14 fev -- 28 abr). Linhas tracejadas: eventos-chave.
+  Dados: RouteViews MRT / sintético baseado em RIPE RIS e fontes secundárias.}
+\label{fig:withdrawals}
+\end{figure}
 
 O padrão de curfews é particularmente significativo para M2: a periodicidade
 diária de withdrawals às 18h30 UTC e recuperações às 02h30 UTC, sincronizadas
@@ -340,10 +351,22 @@ aparente era implementar um \textit{black hole} local para usuários do Mytel,
 replicando a técnica do hijack do YouTube pela PTCL (Paquistão) em
 2008~\cite{manrs:2021, kentik:2022}.
 
-A Figura~\ref{fig:hijack} (a produzir via RouteViews MRT) deve mostrar a
-linha do tempo de anúncios para o prefixo \texttt{104.244.42.0/24} em 5 de
-fevereiro de 2021, evidenciando a transição entre AS de origem legítimo
-(AS13414) e ilegítimo (AS136168) e a posterior retirada do anúncio.
+A Figura~\ref{fig:hijack} mostra a linha do tempo de anúncios para o prefixo
+\texttt{104.244.42.0/24} em 5 de fevereiro de 2021, evidenciando a transição
+entre AS de origem legítimo (AS13414) e ilegítimo (AS136168) e a posterior
+retirada do anúncio.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{fig_hijack.pdf}
+\caption{Timeline do hijack BGP do Twitter: anúncios para o prefixo
+  \texttt{104.244.42.0/24} em 5 fev 2021. Verde: AS de origem legítimo
+  (AS13414/Twitter). Vermelho~(×): AS de origem ilegítimo (AS136168/Mytel).
+  Linha tracejada laranja: 15h51 UTC (início). Linha pontilhada vermelha:
+  18h58 UTC (retirada do anúncio ilegítimo). Dados: RouteViews MRT / eventos
+  documentados em~\cite{manrs:2021,ooni:multiperspective}.}
+\label{fig:hijack}
+\end{figure}
 
 Para M6, é relevante notar que \textbf{o Twitter não possuía ROAs publicados
 no RPKI} para o prefixo \texttt{104.244.42.0/24} na época do incidente, o que
@@ -357,11 +380,10 @@ atualizaram suas políticas após o primeiro incidente.
 
 \subsection{Correlação BGP e Tráfego (M1, M2, M3)}
 
-A Figura~\ref{fig:correlacao} (a produzir com dados do IODA e Cloudflare Radar)
-deve sobrepor, para o período de fevereiro a abril de 2021: (a) o índice de
-visibilidade de prefixos BGP para Myanmar; e (b) o índice de tráfego do
-Cloudflare Radar normalizado (0--100). A análise desse gráfico permite
-distinguir três padrões diagnósticos:
+A Figura~\ref{fig:correlacao} sobrepõe, para o período de fevereiro a abril
+de 2021: (a) o número de prefixos visíveis do AS9988 (MPT); e (b) o índice
+de tráfego normalizado (0--100) derivado de dados IODA/CAIDA para Myanmar.
+A análise permite distinguir três padrões diagnósticos:
 
 \begin{itemize}
   \item \textbf{Queda simultânea de BGP e tráfego}: evidência mais forte de
@@ -374,6 +396,19 @@ distinguir três padrões diagnósticos:
     foram detectadas pelo IODA até 15 minutos antes das primeiras reportagens
     jornalísticas sobre o golpe~\cite{internetinmyanmar:bgp}.
 \end{itemize}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{fig_correlacao.pdf}
+\caption{Correlação entre sinais BGP e tráfego real em Myanmar (jan--abr 2021).
+  Eixo esquerdo (azul): prefixos visíveis do AS9988 (MPT). Eixo direito
+  (laranja): índice de tráfego normalizado 0--100 (IODA/CAIDA). Quedas
+  simultâneas indicam apagões totais; quedas de tráfego sem queda de BGP
+  indicam bloqueio na camada de aplicação. Dados BGP: RIPEstat API.
+  Dados de tráfego: IODA/CAIDA e estimativas baseadas em fontes
+  secundárias~\cite{ooni:multiperspective,netblocks:2021}.}
+\label{fig:correlacao}
+\end{figure}
 
 Para M3 (AS\_PATH médio), esperamos estabilidade durante os períodos normais,
 com possível aumento durante reroteamentos gerados por apagões parciais ---

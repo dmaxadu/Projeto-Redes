@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.18)  26 JUN 2026 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.18)  26 JUN 2026 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/dmaxadu/Documents/Projeto-Redes/artigo.tex
-(/Users/dmaxadu/Documents/Projeto-Redes/artigo.tex
+**/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex
+(/Users/dmaxadu/Documents/Projeto-Redes/artigo/artigo.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -235,34 +235,37 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip52
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 22.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 23.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count306
+) (./artigo.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 9.
 )
-No file artigo.aux.
 \openout1 = `artigo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -319,216 +322,178 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 22.
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
+ (./artigo.out) (./artigo.out)
 \@outlinefile=\write3
 \openout3 = `artigo.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 25.
-
-/Users/dmaxadu/Documents/Projeto-Redes/artigo.tex:25: Undefined control sequence.
-\@address ...io de Janeiro -- RJ -- Brasil \email 
-                                                  {\{autor1, autor2\}@dcc.uf...
-l.25 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 25.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 68.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 1 undefined on input line 74.
-
-[1
-
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-
-LaTeX Warning: Citation `dcd:2026' on page 2 undefined on input line 108.
-
-
-LaTeX Warning: Citation `netblocks:2021' on page 2 undefined on input line 115.
-
-
-LaTeX Warning: Citation `netblocks:2021' on page 2 undefined on input line 117.
-
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 2 undefined on input line 119.
-
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 2 undefined on input line 121.
-
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 2 undefined on input line 124.
-
-
-LaTeX Warning: Citation `netblocks:2021' on page 2 undefined on input line 124.
-
-[2]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 160.
+(Font)              <6> on input line 26.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 26.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 26.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 69.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [1
 
-LaTeX Warning: Citation `manrs:2021' on page 3 undefined on input line 161.
-
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 3 undefined on input line 165.
-
-
-LaTeX Warning: Citation `manrs:2021' on page 3 undefined on input line 175.
-
-[3]
-
-LaTeX Warning: Reference `tab:fontes' on page 4 undefined on input line 192.
-
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 197.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1phv.fd
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3]
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 198.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
-[]\OT1/ptm/m/n/12 Tabelas BGP e up-da-tes
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 203--204
-[]\OT1/ptm/m/n/12 Visibilidade de pre-fi-xos,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []\OT1/ptm/m/n/12 Tabelas BGP e up-da-tes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 2922) in paragraph at lines 204--205
+[]\OT1/ptm/m/n/12 Visibilidade de pre-fi-xos,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]\OT1/ptm/m/n/12 Tabelas BGP e up-da-tes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 []\OT1/ptm/m/n/12 AS[]PATH, ori-gin AS,
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 205--205
+Underfull \hbox (badness 1394) in paragraph at lines 206--206
 []\OT1/ptm/m/n/12 Rela[][]oes cliente-provedor e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 []\OT1/ptm/m/n/12 Autonomia re-gi-o-nal,
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 208--208
+Underfull \hbox (badness 6708) in paragraph at lines 209--209
 []\OT1/ptm/m/n/12 Medi[][]oes de blo-queio de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
 []\OT1/ptm/m/n/12 Tr[]afego nor-ma-li-zado por
  []
 
+[4] [5]
+<../bgp-myanmar/figuras/fig_withdrawals.pdf, id=138, 859.32622pt x 353.0614pt>
+File: ../bgp-myanmar/figuras/fig_withdrawals.pdf Graphic file (type pdf)
+<use ../bgp-myanmar/figuras/fig_withdrawals.pdf>
+Package pdftex.def Info: ../bgp-myanmar/figuras/fig_withdrawals.pdf  used on input line 310.
+(pdftex.def)             Requested size: 426.79135pt x 175.35043pt.
 
-LaTeX Warning: Citation `dcd:2026' on page 4 undefined on input line 225.
-
-
-LaTeX Warning: Citation `dcd:2026' on page 4 undefined on input line 227.
-
-[4]
-
-LaTeX Warning: Reference `fig:withdrawals' on page 5 undefined on input line 294.
-
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 5 undefined on input line 304.
-
-[5]
-
-LaTeX Warning: Citation `ooni:multiperspective' on page 6 undefined on input line 311.
-
-
-LaTeX Warning: Citation `manrs:2021' on page 6 undefined on input line 324.
-
-
-Overfull \hbox (12.40846pt too wide) in paragraph at lines 335--335
+Overfull \hbox (12.40846pt too wide) in paragraph at lines 346--346
 []\OT1/pcr/m/n/12 02/05/21 15:51:17  104.244.42.0/24  37989 56300 132132 136168[] 
  []
 
-
-LaTeX Warning: Citation `manrs:2021' on page 6 undefined on input line 341.
-
-
-LaTeX Warning: Citation `kentik:2022' on page 6 undefined on input line 341.
-
-
-LaTeX Warning: Reference `fig:hijack' on page 6 undefined on input line 343.
-
-
-LaTeX Warning: Citation `manrs:2021' on page 6 undefined on input line 353.
-
-
-LaTeX Warning: Reference `fig:correlacao' on page 6 undefined on input line 360.
-
-[6]
-
-LaTeX Warning: Citation `internetinmyanmar:bgp' on page 7 undefined on input line 375.
-
-
-LaTeX Warning: Reference `tab:upstreams' on page 7 undefined on input line 388.
-
-[7]
-Underfull \hbox (badness 6944) in paragraph at lines 426--429
+[6 <../bgp-myanmar/figuras/fig_withdrawals.pdf>]
+<../bgp-myanmar/figuras/fig_hijack.pdf, id=220, 858.51741pt x 353.19312pt>
+File: ../bgp-myanmar/figuras/fig_hijack.pdf Graphic file (type pdf)
+<use ../bgp-myanmar/figuras/fig_hijack.pdf>
+Package pdftex.def Info: ../bgp-myanmar/figuras/fig_hijack.pdf  used on input line 361.
+(pdftex.def)             Requested size: 426.79135pt x 175.58293pt.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 367.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+) [7 <../bgp-myanmar/figuras/fig_hijack.pdf>]
+<../bgp-myanmar/figuras/fig_correlacao.pdf, id=301, 858.68619pt x 353.31136pt>
+File: ../bgp-myanmar/figuras/fig_correlacao.pdf Graphic file (type pdf)
+<use ../bgp-myanmar/figuras/fig_correlacao.pdf>
+Package pdftex.def Info: ../bgp-myanmar/figuras/fig_correlacao.pdf  used on input line 402.
+(pdftex.def)             Requested size: 426.79135pt x 175.60936pt.
+ [8 <../bgp-myanmar/figuras/fig_correlacao.pdf>]
+Underfull \hbox (badness 6944) in paragraph at lines 461--464
 []\OT1/ptm/b/n/12 Manipula[][]ao de ori-gem\OT1/ptm/m/n/12 : a mudan[]a de AS de ori-gem do pre-fixo
  []
 
-[8]
-No file artigo.bbl.
-[9] (./artigo.aux)
+[9] (./artigo.bbl
+Overfull \hbox (84.5348pt too wide) in paragraph at lines 4--8
+\OT1/pcr/m/n/12 a-[]light-[]through-[]the-[]blackout-[]connectivity-[]in-[]myanmars-[]military-[]coup/$[]\OT1/ptm/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+[]\OT1/ptm/m/n/12 NetBlocks.  In-ter-net dis-rup-ted in Myan-mar amid ap-pa-rent mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+\OT1/ptm/m/n/12 li-tary upri-sing.  []$\OT1/pcr/m/n/12 https : / / netblocks . org / reports /
+ []
+
+
+Overfull \hbox (98.4348pt too wide) in paragraph at lines 22--26
+\OT1/pcr/m/n/12 internet-[]disrupted-[]in-[]myanmar-[]amid-[]apparent-[]military-[]uprising-[]JBZrmlB6$[]\OT1/ptm/m/n/12 ,
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+[]\OT1/ptm/m/n/12 OONI, CAIDA/IODA, and Ken-tik.  A multi-perspective view of in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+\OT1/ptm/m/n/12 ter-net cen-sorship in Myan-mar.  []$\OT1/pcr/m/n/12 https : / / ooni . org / post /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+\OT1/pcr/m/n/12 2021-[]multiperspective-[]view-[]internet-[]censorship-[]myanmar$[]\OT1/ptm/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+[]\OT1/ptm/m/n/12 Tom Strickx.  A brief his-tory of the in-ter-net's big-gest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+\OT1/ptm/m/n/12 BGP in-ci-dents.  []$\OT1/pcr/m/n/12 https : / / www . kentik . com / blog /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
+\OT1/pcr/m/n/12 a-[]brief-[]history-[]of-[]the-[]internets-[]biggest-[]bgp-[]incidents/$[]\OT1/ptm/m/n/12 ,
+ []
+
+) [11] (./artigo.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `artigo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `artigo.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C8B4CB0895162B2AEA3B33531650CE28;4162.
+Package rerunfilecheck Info: File `artigo.out' has not changed.
+(rerunfilecheck)             Checksum: C8B4CB0895162B2AEA3B33531650CE28;4162.
  ) 
 Here is how much of TeX's memory you used:
- 11717 strings out of 467525
- 190749 string characters out of 5418982
- 619853 words of memory out of 5000000
- 40462 multiletter control sequences out of 15000+600000
- 645262 words of font info for 70 fonts, out of 8000000 for 9000
+ 11842 strings out of 467525
+ 193434 string characters out of 5418982
+ 622886 words of memory out of 5000000
+ 40559 multiletter control sequences out of 15000+600000
+ 647111 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,299b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo.pdf (9 pages, 112331 bytes).
+ 75i,14n,79p,679b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on artigo.pdf (11 pages, 277564 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
