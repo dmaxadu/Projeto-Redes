@@ -26,8 +26,9 @@ O Caso de Myanmar (2021)}
 
 \begin{abstract}
   This paper analyzes BGP routing anomalies associated with Myanmar's military
-  coup of February 2021 (cyber attacks and route manipulation, in relation to Myanmar civil war). 
-  Using public data from RIPE RIS, RouteViews, IODA/CAIDA, OONI, and Cloudflare Radar, we
+  coup of February 2021 (cyber attacks and route manipulation,
+  in relation to Myanmar civil war). Using public data
+  from RIPE RIS, RouteViews, IODA/CAIDA, OONI, and Cloudflare Radar, we
   investigate three observable phenomena: coordinated prefix withdrawals by
   national ISPs during state-ordered blackouts, a BGP hijack attempt targeting
   Twitter's address space originated by AS136168 (Mytel), and the correlation
@@ -43,9 +44,8 @@ O Caso de Myanmar (2021)}
 
 \begin{resumo}
   Este artigo analisa anomalias de roteamento BGP associadas ao golpe militar
-  em Myanmar (fevereiro de 2021), enquadrando o problema de
-  ataques cibernéticos e manipulação de rotas em relação à questão
-  da guerra civil em Myanmar. Usando dados públicos do RIPE RIS,
+  em Myanmar (fevereiro de 2021), enquadrando o problema nos ataques cibernéticos e manipulação de rotas
+  em relação à questão da guerra civil em Myanmar. Usando dados públicos do RIPE RIS,
   RouteViews, IODA/CAIDA, OONI e Cloudflare Radar, investigamos três fenômenos:
   retiradas coordenadas de prefixos por ISPs nacionais durante apagões
   ordenados pelo Estado, uma tentativa de hijack BGP do espaço de endereços do
@@ -80,9 +80,9 @@ de blocos de endereços IP entre sistemas autônomos (ASes) ao redor do mundo.
 Essa visibilidade pública e em tempo real torna o BGP uma fonte privilegiada
 para análise geopolítica de eventos de censura e repressão digital.
 
-Este trabalho investiga a \textbf{ataques cibernéticos e
-manipulação de rotas BGP} em relação à \textbf{
-guerra civil em Myanmar}, com foco no período de fevereiro a abril de 2021.
+Este trabalho investiga os \textbf{ataques cibernéticos e
+manipulação de rotas BGP} em relação à \textbf{guerra civil em Myanmar}, 
+com foco no período de fevereiro a abril de 2021.
 Organizamos a análise em torno de três perguntas orientadoras: (i) há sinais
 de \textit{hijack}, \textit{route leak} ou anúncios anômalos nos dados BGP
 dos ASes de Myanmar durante o conflito? (ii) Padrões de \textit{withdrawal}
@@ -105,7 +105,7 @@ Aung San Suu Kyi e declarou estado de emergência, encerrando uma década de
 abertura democrática parcial. Os meses seguintes foram marcados por protestos
 massivos, violência estatal e uma guerra civil em expansão que, até 2025, já
 envolvia dezenas de grupos de resistência étnica e forças de defesa do
-povo~\cite{dcd:2025}.
+povo~\cite{dcd:2026}.
 
 O controle das comunicações digitais foi uma ferramenta central da junta.
 A sequência de eventos de Internet documentada é a seguinte:
@@ -133,14 +133,14 @@ técnica do controle estatal de Internet ao longo do conflito.
 \section{Fundamentação Técnica}
 %----------------------------------------------------------------------
 
-Sobre os \textbf{ataques cibernéticos e manipulação de rotas},
+\textbf{Ataques cibernéticos e manipulação de rotas},
 cujas métricas orientadoras são: ROA/RPKI, mudança de \textit{origin AS} e
 novos anúncios anômalos. Explicamos abaixo os conceitos necessários para
 interpretar os eventos de Myanmar.
 
 \subsection{BGP e Sistemas Autônomos}
 
-\textbf{O BGP} é o protocolo de roteamento inter-domínio da Internet. Cada organização
+O BGP é o protocolo de roteamento inter-domínio da Internet. Cada organização
 opera como um Sistema Autônomo (AS), identificado por um número único (ASN).
 Os ASes anunciam prefixos IP (blocos de endereços) que controlam e propagam
 essas informações para seus vizinhos. O conjunto global de prefixos anunciados
@@ -222,9 +222,9 @@ Os principais sistemas autônomos de Myanmar relevantes para este trabalho são:
     entre Viettel (Vietnã) e a empresa de telecomunicações do exército;
     origem do hijack de fevereiro de 2021;
   \item \textbf{AS132748} --- Ooredoo Myanmar (rebatizada U9 em 2025 após
-    venda para Nine Communications de Singapura)~\cite{dcd:2025};
+    venda para Nine Communications de Singapura)~\cite{dcd:2026};
   \item \textbf{AS132167} --- Atom Myanmar (ex-Telenor, vendida para joint
-    venture ligada ao exército em 2022)~\cite{dcd:2025}.
+    venture ligada ao exército em 2022)~\cite{dcd:2026}.
 \end{itemize}
 
 \subsection{Período de Análise}
@@ -310,8 +310,7 @@ Observamos:
 \caption{Volume de retiradas de prefixos BGP por hora para os quatro ISPs
   monitorados de Myanmar (jan--abr 2021). Faixas cinza: janelas de curfew
   (18h30--02h30 UTC, 14 fev -- 28 abr). Linhas tracejadas: eventos-chave.
-  \textbf{Dados agregados e processados a partir de fontes primárias
-  (RouteViews MRT) e secundárias~\cite{ooni:multiperspective,netblocks:2021}.}}
+  Dados: RouteViews MRT / sintético baseado em RIPE RIS e fontes secundárias.}
 \label{fig:withdrawals}
 \end{figure}
 
@@ -322,15 +321,11 @@ entre quatro operadoras distintas durante 72 noites consecutivas, é
 constitui evidência de controle centralizado~\cite{ooni:multiperspective}.
 
 Para M1, a comparação entre o número de prefixos visíveis de cada AS em
-janeiro (linha de base) e durante os curfews revela quedas de visibilidade
-próximas a 0\% durante as janelas noturnas. Por exemplo, o AS9988 (MPT)
-apresentou queda de 100\% dos prefixos anunciados durante os curfews, enquanto
-o AS136168 (Mytel) manteve cerca de 15\% dos prefixos visíveis, sugerindo
-que a ordem de apagão pode ter sido aplicada de forma diferenciada entre
-operadoras.
+janeiro (linha de base) e durante os curfews deve revelar quedas de visibilidade
+próximas a 0\% durante as janelas noturnas.
 
-
-\subsection{O Hijack BGP do Twitter (M5)}
+\subsection{O Hijack BGP do Twitter (M5, M6)}
+\label{sec:hijack}
 
 Em 5 de fevereiro de 2021, às 15h51 UTC, o AS136168 (Mytel) passou a originar
 o prefixo \texttt{104.244.42.0/24}, pertencente ao Twitter (AS13414). Esse
@@ -338,25 +333,16 @@ prefixo hospeda os registros DNS A de \texttt{twitter.com}, sendo crítico
 para o acesso ao serviço. O anúncio ilegítimo ficou ativo por mais de três
 horas~\cite{manrs:2021}.
 
-Os dados do RouteViews e do Isolario registram as trajetórias de anúncio no
-momento do início do sequestro de rotas (M5), detalhados na Tabela~\ref{tab:hijack-paths}.
+Os dados do RouteViews e do Isolario registram os seguintes caminhos no
+momento do início do hijack (M5):
 
-\begin{table}[ht]
-\centering
-\caption{Updates BGP capturados registrando o início do hijack (05/02/2021)}
-\label{tab:hijack-paths}
-\begin{tabular}{@{}lllll@{}}
-\toprule
-\textbf{Data} & \textbf{Horário (UTC)} & \textbf{Prefixo Alvo} & \textbf{Peer ASN} & \textbf{Caminho de AS (AS\_PATH)} \\
-\midrule
-05/02/21 & 15:51:17 & \texttt{104.244.42.0/24} & 37989 & 56300 132132 136168 \\
-05/02/21 & 15:51:21 & \texttt{104.244.42.0/24} & 61292 & 136168 \\
-05/02/21 & 15:51:40 & \texttt{104.244.42.0/24} & 37989 & 4844 136168 \\
-05/02/21 & 15:51:13 & \texttt{104.244.42.0/24} & 18106 & 136168 \\
-05/02/21 & 15:51:21 & \texttt{104.244.42.0/24} & 23673 & 136168 \\
-\bottomrule
-\end{tabular}
-\end{table}
+\begin{verbatim}
+02/05/21 15:51:17  104.244.42.0/24  37989 56300 132132 136168
+02/05/21 15:51:21  104.244.42.0/24  61292 136168
+02/05/21 15:51:40  104.244.42.0/24  37989 4844 136168
+02/05/21 15:51:13  104.244.42.0/24  18106 136168
+02/05/21 15:51:21  104.244.42.0/24  23673 136168
+\end{verbatim}
 
 O anúncio foi aceito por cinco ASes externos: AS132132, AS61292, AS4844,
 AS18106 e AS23673 --- operadores em Singapura e no Vietnã. O objetivo
@@ -381,18 +367,15 @@ retirada do anúncio.
 \label{fig:hijack}
 \end{figure}
 
-\textbf{Nota sobre M6}: embora a ausência de ROA do Twitter tenha facilitado
-a propagação do hijack, a métrica M6 deste trabalho foca na cobertura RPKI
-dos ASes de Myanmar. Conforme dados do RIPEstat em fevereiro de 2021,
-nenhum dos quatro ASes monitorados (AS9988, AS136168, AS132748, AS132167)
-possuía ROAs publicados para seus prefixos. Isso significa que a cobertura
-RPKI de Myanmar era \textbf{0\%} na época, tornando o país inteiramente
-vulnerável a ataques de origem de rota, tanto internos quanto externos.
-Dois dias depois, em 7 de fevereiro, o AS136168 repetiu a técnica com o
-prefixo \texttt{1.32.58.0/24}, desta vez aceito apenas por três ASes ---
-evidência de que alguns operadores atualizaram suas políticas após o primeiro
-incidente, mas a vulnerabilidade estrutural permaneceu.
-
+Para M6, é relevante notar que \textbf{o Twitter não possuía ROAs publicados
+no RPKI} para o prefixo \texttt{104.244.42.0/24} na época do incidente, o que
+facilitou a aceitação do anúncio ilegítimo pelos cinco ASes aceitantes. Operadores
+que já realizavam ROV e possuíam políticas conservadoras de filtragem com base
+em objetos \texttt{route} rejeitaram o anúncio, mas os cinco aceitantes não
+tinham essa proteção ativa~\cite{manrs:2021}. Dois dias depois, em 7 de
+fevereiro, o AS136168 repetiu a técnica com o prefixo \texttt{1.32.58.0/24},
+desta vez aceito apenas por três ASes --- evidência de que alguns operadores
+atualizaram suas políticas após o primeiro incidente.
 
 \subsection{Correlação BGP e Tráfego (M1, M2, M3)}
 
@@ -433,12 +416,11 @@ distintos.
 
 \subsection{Concentração de Trânsito (M4)}
 
-A análise via CAIDA AS Relationships revelou os upstreams dominantes dos
-ASes de Myanmar. A Tabela~\ref{tab:upstreams} lista os upstreams conhecidos
-do AS136168 (Mytel) segundo o RIPEstat na época do incidente, incluindo o
-AS7552 (Viettel), que é a controladora da Mytel e atua como seu principal
-provedor de trânsito internacional, embora nem sempre apareça nas rotas
-públicas devido a acordos de trânsito privado.
+A análise via CAIDA AS Relationships deve revelar os upstreams dominantes dos
+ASes de Myanmar. A hipótese é que, dada a posição geográfica do país e o
+histórico de infraestrutura limitada, poucos ASes de trânsito concentram a
+conectividade internacional de Myanmar. A Tabela~\ref{tab:upstreams} lista os
+upstreams conhecidos do AS136168 (Mytel) segundo o RIPEstat na época do incidente.
 
 \begin{table}[ht]
 \centering
@@ -448,7 +430,6 @@ públicas devido a acordos de trânsito privado.
 \toprule
 \textbf{ASN} & \textbf{Operador} & \textbf{País} \\
 \midrule
-AS7552   & Viettel (controladora) & Vietnã \\
 AS6939   & Hurricane Electric      & EUA \\
 AS4844   & PT Telkom Indonesia     & Indonésia \\
 AS132132 & MyRepublic              & Singapura \\
@@ -458,12 +439,10 @@ AS61292  & C4L                     & Reino Unido \\
 \end{tabular}
 \end{table}
 
-Para \textbf{M4 (concentração top-5)}, observamos que o AS6939 (Hurricane
-Electric) respondeu por \textbf{62\%} dos caminhos observados para o AS136168,
-enquanto os demais upstreams (incluindo o AS7552) dividiram os 38\% restantes.
-Essa alta concentração em um único AS americano demonstra forte dependência
-de trânsito internacional, o que torna a conectividade do país vulnerável a
-sanções ou pressões geopolíticas sobre provedores específicos.
+A forte presença de AS6939 (Hurricane Electric) como upstream preferencial do
+Mytel para a maioria das rotas é relevante: uma porcentagem significativa do
+tráfego internacional de saída do AS136168 passa por um único AS americano,
+demonstrando dependência de trânsito concentrada (M4).
 
 
 %----------------------------------------------------------------------
@@ -530,7 +509,7 @@ opera por retirada de prefixos sem propagação externa.
 %----------------------------------------------------------------------
 
 Este trabalho analisou a manipulação de rotas BGP em
-relação à questão geopolítica da guerra civil em Myanmar utilizando
+relação à guerra civil em Myanmar utilizando
 dados públicos de RIPE RIS, RouteViews, CAIDA, OONI e Cloudflare Radar.
 
 Os principais resultados foram: (1) padrões sincronizados e periódicos de
@@ -538,9 +517,9 @@ withdrawals em quatro ISPs distintos por 72 noites consecutivas constituem
 evidência técnica forte de controle estatal de conectividade; (2) o hijack
 BGP do Twitter pelo AS136168 em 5 de fevereiro de 2021 é verificável
 objetivamente nos dados RouteViews e demonstra o uso de manipulação de origem
-de rota como instrumento de censura; (3) a cobertura RPKI dos ASes de Myanmar
-era 0\% na época, agravando a vulnerabilidade do país a ataques de roteamento;
-e (4) o sinal BGP antecipou reportagens jornalísticas em 2 a 15 minutos,
+de rota como instrumento de censura; (3) a ausência de ROAs no RPKI para o
+prefixo alvo facilitou a propagação colateral para cinco ASes externos; e
+(4) o sinal BGP antecipou reportagens jornalísticas em 2 a 15 minutos,
 confirmando seu valor como indicador precoce de repressão digital.
 
 Ressaltamos que todas as conclusões se restringem ao plano de controle: os
