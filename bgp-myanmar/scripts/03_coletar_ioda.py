@@ -6,8 +6,10 @@ Usado na Figura 3 (correlação BGP × tráfego).
 import requests
 import pandas as pd
 from datetime import datetime, timezone
+import os
 
-OUT = "/Users/dmaxadu/Documents/Projeto-Redes/bgp-myanmar/dados"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(os.path.dirname(SCRIPT_DIR), "dados")
 
 # 31 jan 2021 00:00 UTC a 28 abr 2021 23:59 UTC
 FROM_TS = 1611878400

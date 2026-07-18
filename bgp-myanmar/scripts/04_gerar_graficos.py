@@ -16,9 +16,11 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-DADOS = "/Users/dmaxadu/Documents/Projeto-Redes/bgp-myanmar/dados"
-FIGURAS = "/Users/dmaxadu/Documents/Projeto-Redes/bgp-myanmar/figuras"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DADOS = os.path.join(os.path.dirname(SCRIPT_DIR), "dados")
+FIGURAS = os.path.join(os.path.dirname(SCRIPT_DIR), "figuras")
 os.makedirs(FIGURAS, exist_ok=True)
+os.makedirs(DADOS, exist_ok=True)
 
 COLORS = {
     9988:   "#1f77b4",   # azul — MPT

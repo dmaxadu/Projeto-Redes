@@ -22,10 +22,12 @@ from collections import defaultdict
 ASNS_MYANMAR = {9988, 136168, 132748, 132167}
 HIJACK_PREFIX = "104.244.42.0/24"
 ROUTEVIEWS_BASE = "http://archive.routeviews.org/bgpdata"
-OUT = "/Users/dmaxadu/Documents/Projeto-Redes/bgp-myanmar/dados"
-TMP = "/private/tmp/claude-501/-Users-dmaxadu-Documents-Projeto-Redes/3a1f34a5-390f-4461-80e5-06a17e6bf20f/scratchpad/mrt"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(os.path.dirname(SCRIPT_DIR), "dados")
+TMP = os.path.join(os.path.dirname(SCRIPT_DIR), "temp_mrt")
 
 os.makedirs(TMP, exist_ok=True)
+os.makedirs(OUT, exist_ok=True)
 
 
 def list_update_files(year_month):

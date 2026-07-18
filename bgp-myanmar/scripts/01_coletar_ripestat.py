@@ -8,10 +8,12 @@ import requests
 import pandas as pd
 import time
 import sys
+import os
 
 ASNS = [9988, 136168, 132748, 132167]
 BASE = "https://stat.ripe.net/data"
-OUT = "/Users/dmaxadu/Documents/Projeto-Redes/bgp-myanmar/dados"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.join(os.path.dirname(SCRIPT_DIR), "dados")
 
 
 def get_announced_prefixes(asn):
